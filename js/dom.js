@@ -36,7 +36,7 @@ function makeTodo(data, timestamp, isCompleted) {
   if (isCompleted) {
     container.append(createUndoButton(), createTrashButton());
   } else {
-    container.append(createCheckButton());
+    container.append(createCheckButton(), createTrashButton());
   }
 
   return container;
